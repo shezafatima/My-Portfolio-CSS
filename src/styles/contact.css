@@ -1,0 +1,225 @@
+/* contact.css */
+
+/* --- Section Wrapper --- */
+.contact-section {
+    /* Tailwind: text-gray-600 body-font relative */
+    color: #4B5563; /* text-gray-600 */
+    font-family: sans-serif; /* body-font (update if needed) */
+    position: relative;
+  }
+  
+  /* --- Container --- */
+  .contact-container {
+    /* Tailwind: container px-5 py-24 mx-auto */
+    padding: 6rem 1.25rem; /* py-24 (6rem) and px-5 (1.25rem) */
+    margin: 0 auto;
+    max-width: 1200px; /* optional, adjust as needed */
+  }
+  
+  /* --- Header Section --- */
+  .contact-header {
+    /* Tailwind: flex flex-col text-center w-full mb-12 */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem; /* mb-12 */
+  }
+  
+  .contact-title {
+    /* Tailwind: sm:text-5xl text-4xl title-font mb-4 text-purple-800 sm:font-bold */
+    font-size: 2.25rem; /* text-4xl */
+    margin-bottom: 1rem; /* mb-4 */
+    color: #6B21A8; /* text-purple-800 */
+  }
+  
+  @media (min-width: 640px) {
+    .contact-title {
+      font-size: 3rem; /* Approximation for sm:text-5xl */
+      font-weight: bold; /* sm:font-bold */
+    }
+  }
+  
+  .contact-subtitle {
+    /* Tailwind: lg:w-2/3 mx-auto leading-relaxed sm:text-2xl text-lg text-gray-500 */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6; /* leading-relaxed, adjust if needed */
+    font-size: 1.125rem; /* text-lg */
+    color: #6B7280; /* text-gray-500 */
+  }
+  
+  @media (min-width: 640px) {
+    .contact-subtitle {
+      font-size: 1.5rem; /* Approximation for sm:text-2xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-subtitle {
+      width: 66.6667%; /* lg:w-2/3 */
+    }
+  }
+  
+  /* --- Form Container --- */
+  .contact-form-container {
+    /* Tailwind: lg:w-1/2 md:w-2/3 mx-auto */
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-form-container {
+      width: 66.6667%; /* md:w-2/3 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-form-container {
+      width: 50%; /* lg:w-1/2 */
+    }
+  }
+  
+  /* --- Form Wrapper --- */
+  .contact-form-wrapper {
+    /* Tailwind: flex flex-wrap -m-2 */
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem; /* -m-2 (each side: -0.5rem) */
+  }
+  
+  /* --- Form Element --- */
+  .contact-form {
+    /* Same as wrapper if desired; here we’re using similar spacing */
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+  }
+  
+  /* --- Input Group for Half-Width Fields --- */
+  .contact-input-group-half {
+    /* Tailwind: p-2 w-1/2 */
+    padding: 0.5rem;
+    width: 50%;
+  }
+  
+  /* --- Input Group for Full-Width Fields --- */
+  .contact-input-group-full {
+    /* Tailwind: p-2 w-full */
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  /* --- Input Wrapper --- */
+  .contact-input-wrapper {
+    position: relative;
+  }
+  
+  /* --- Labels --- */
+  .contact-label {
+    /* Tailwind: leading-7 sm:text-xl text-sm text-gray-500 */
+    line-height: 1.75;
+    font-size: 0.875rem; /* text-sm */
+    color: #6B7280; /* text-gray-500 */
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  @media (min-width: 640px) {
+    .contact-label {
+      font-size: 1.25rem; /* Approximation for sm:text-xl */
+    }
+  }
+  
+  /* --- Input Fields --- */
+  .contact-input {
+    /* Tailwind:
+       w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
+       focus:border-purple-500 sm:focus:bg-gray-200 focus:bg-white 
+       focus:ring-2 focus:ring-indigo-200 text-base outline-none 
+       text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out
+    */
+    width: 100%;
+    background-color: rgba(243, 244, 246, 0.5); /* bg-gray-100 with 50% opacity */
+    border-radius: 0.25rem; /* rounded */
+    border: 1px solid #D1D5DB; /* border-gray-300 */
+    padding: 0.25rem 0.75rem; /* py-1 and px-3 */
+    font-size: 1rem; /* text-base */
+    color: #111827; /* text-gray-900 */
+    line-height: 2rem; /* leading-8 */
+    outline: none;
+    transition: background-color 0.2s ease-in-out,
+                border-color 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+  }
+  
+  .contact-input:focus {
+    border-color: #A855F7; /* focus:border-purple-500 */
+    background-color: #ffffff; /* focus:bg-white */
+    box-shadow: 0 0 0 2px #C7D2FE; /* focus:ring-2 focus:ring-indigo-200 */
+  }
+  
+  @media (min-width: 640px) {
+    .contact-input:focus {
+      /* Optionally, if you want a different bg on small screens */
+      background-color: #E5E7EB; /* Approximation for sm:focus:bg-gray-200 */
+    }
+  }
+  
+  /* --- Textarea --- */
+  .contact-textarea {
+    /* Similar to .contact-input with adjustments */
+    width: 100%;
+    background-color: rgba(243, 244, 246, 0.5);
+    border-radius: 0.25rem;
+    border: 1px solid #D1D5DB;
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    color: #111827;
+    line-height: 1.5;
+    outline: none;
+    resize: none;
+    transition: background-color 0.2s ease-in-out,
+                border-color 0.2s ease-in-out,
+                box-shadow 0.2s ease-in-out;
+    height: 8rem; /* h-32 */
+  }
+  
+  .contact-textarea:focus {
+    border-color: #A855F7;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px #C7D2FE;
+  }
+  
+  @media (min-width: 640px) {
+    .contact-textarea:focus {
+      background-color: #E5E7EB;
+    }
+  }
+  
+  /* --- Button --- */
+  .contact-button {
+    /* Tailwind: flex mx-auto font-bold text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-800 rounded text-lg */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #A855F7; /* bg-purple-500 */
+    border: none;
+    padding: 0.5rem 2rem; /* py-2 and px-8 */
+    font-size: 1.125rem; /* text-lg */
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact-button:focus {
+    outline: none;
+  }
+  
+  .contact-button:hover {
+    background-color: #6B21A8; /* hover:bg-purple-800 */
+  }
+  

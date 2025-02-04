@@ -1,0 +1,150 @@
+/* about.css */
+
+/* Section wrapper */
+.about-section {
+    color: #4B5563; /* Tailwind's text-gray-600 */
+    font-family: sans-serif; /* or your preferred body font */
+  }
+  
+  /* Container (wrapper for the content) */
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 1.25rem; /* py-24 (6rem) and px-5 (1.25rem) */
+    margin: 0 auto;
+    max-width: 1200px; /* optional max width */
+  }
+  
+  /* Responsive: On medium screens and up, layout changes to row */
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+    }
+  }
+  
+  /* Left content area (text block) */
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 4rem; /* mb-16 = 4rem */
+  }
+  
+  /* Medium screens adjustments for the text block */
+  @media (min-width: 768px) {
+    .about-text {
+      width: 50%; /* md:w-1/2 */
+      align-items: flex-start; /* md:items-start */
+      text-align: left; /* md:text-left */
+      padding-right: 4rem; /* md:pr-16 */
+      margin-bottom: 0; /* md:mb-0 */
+    }
+  }
+  
+  /* Large screens adjustments for the text block */
+  @media (min-width: 1024px) {
+    .about-text {
+      flex-grow: 1; /* lg:flex-grow */
+      padding-right: 6rem; /* lg:pr-24 */
+    }
+  }
+  
+  /* Title (h1) */
+  .about-title {
+    font-size: 1.875rem; /* text-3xl */
+    margin-bottom: 1rem; /* mb-4 */
+    color: #6B21A8; /* text-purple-800 */
+    /* Approximate drop shadow (drop-shadow-lg) */
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* On small screens and up, increase font size and weight */
+  @media (min-width: 640px) {
+    .about-title {
+      font-size: 3.75rem; /* sm:text-6xl */
+      font-weight: bold;  /* sm:font-bold */
+    }
+  }
+  
+  /* Description paragraph */
+  .about-description {
+    margin-bottom: 2rem; /* mb-8 */
+    line-height: 1.6; /* leading-relaxed (approximate) */
+    color: #6B7280; /* text-gray-500 */
+    font-size: 1.125rem; /* text-lg */
+  }
+  
+  /* On small screens and up, increase font size */
+  @media (min-width: 640px) {
+    .about-description {
+      font-size: 1.5rem; /* sm:text-2xl */
+    }
+  }
+  
+  /* Button container */
+  .about-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Button */
+  .about-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* text-white */
+    background-color: #A855F7; /* bg-purple-500 */
+    border: none; /* border-0 */
+    padding: 0.5rem 1.5rem; /* py-2 (0.5rem) and px-6 (1.5rem) */
+    font-weight: 600; /* font-semibold */
+    font-size: 1.125rem; /* text-lg */
+    border-radius: 0.25rem; /* rounded */
+    outline: none; /* focus:outline-none */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Button hover effects */
+  .about-button:hover {
+    background-color: #6B21A8; /* hover:bg-purple-800 */
+    color: #D1D5DB; /* hover:text-gray-300 */
+  }
+  
+  /* Right content area (image container) */
+  .about-image-container {
+    width: 83.333%; /* w-5/6 */
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) {
+    .about-image-container {
+      width: 50%; /* md:w-1/2 */
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .about-image-container {
+      width: 100%; /* lg:w-full */
+      max-width: 32rem; /* lg:max-w-lg (32rem) */
+    }
+  }
+  
+  /* Image */
+  .about-image {
+    object-fit: cover; /* object-cover */
+    object-position: center; /* object-center */
+    border-radius: 0.25rem; /* rounded */
+    width: 100%;
+  }
+  
+  /* On small screens and up, fix image width */
+  @media (min-width: 640px) {
+    .about-image {
+      width: 450px; /* sm:w-[450px] */
+    }
+  }
+  
