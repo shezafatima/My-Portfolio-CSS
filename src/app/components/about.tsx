@@ -15,12 +15,12 @@ const About = () => {
               imagination with technical expertise. With a versatile skill set
               encompassing sketching, art, design, web development, and graphic
               design, I craft captivating experiences that inspire and engage.
-              Driven by the philosophy that 'Creativity is the intersection of
-              art and science,' I continuously push boundaries, exploring new
+              Driven by the philosophy that &apos;Creativity is the intersection of
+              art and science,&apos;I continuously push boundaries, exploring new
               ways to harmonize aesthetics and functionality. With a passion for
               fusing artistry with technological precision, I deliver innovative
               solutions that elevate brands, captivate audiences, and leave
-              lasting impressions. Let's collaborate and bring visionary ideas
+              lasting impressions. Let&apos;s collaborate and bring visionary ideas
               to life.
             </p>
             <div className="about-button-container">

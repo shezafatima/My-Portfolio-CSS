@@ -9,10 +9,10 @@ const Hero = () => {
         <div className="hero-container">
           <div className="hero-text">
             <h1 className="hero-heading">
-              Hi, it's <span className="hero-name">Sheza</span>
+              Hi, it&apos;s <span className="hero-name">Sheza</span>
             </h1>
             <div className="typewriter-container">
-              <span>I'm a </span>
+              <span>I&apos;m a </span>
               <Typewriter
                 options={{
                   strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],

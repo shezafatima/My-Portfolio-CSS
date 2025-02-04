@@ -18,7 +18,7 @@ const Services = () => {
               Services
             </h1>
             <p className="services-description">
-              Delivering tailored solutions to elevate your brand's online presence.
+              Delivering tailored solutions to elevate your brand&apos;s online presence.
             </p>
           </div>
           <div className="services-grid">
@@ -34,7 +34,7 @@ const Services = () => {
                   Graphic Designing
                 </h2>
                 <p className="services-card-text">
-                  Our graphic design services bring your brand to life with visually stunning and effective designs that capture your audience's attention.
+                  Our graphic design services bring your brand to life with visually stunning and effective designs that capture your audience&apos;s attention.
                 </p>
               </div>
             </div>
@@ -114,7 +114,7 @@ const Services = () => {
                   Search Engine Optimization:
                 </h2>
                 <p className="services-card-text">
-                  Our expert SEO services drive targeted traffic, increase conversions, and elevate your brand's online presence.
+                  Our expert SEO services drive targeted traffic, increase conversions, and elevate your brand&apos;s online presence.
                 </p>
               </div>
             </div>
