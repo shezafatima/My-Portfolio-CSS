@@ -1,0 +1,45 @@
+
+.hero-section {
+    background-image: url('../../public/assests/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hero-container {
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-name {
+    color: #6b21a8;
+  }
+  
+  .typewriter-container {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-heading {
+      font-size: 6rem;
+    }
+  
+    .typewriter-container {
+      font-size: 4rem;
+    }
+  }
+  
